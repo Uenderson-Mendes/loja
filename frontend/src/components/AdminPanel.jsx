@@ -412,7 +412,7 @@ const AdminPanel = () => {
           <p>{lowStockCount}</p>
         </div>
         <div className="admin-kpi-card danger">
-          <h3>Sem Estoque</h3>
+          <h3>Sem Est</h3>
           <p>{outOfStockCount}</p>
         </div>
         <div className="admin-kpi-card highlight">
