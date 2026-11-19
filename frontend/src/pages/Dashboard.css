@@ -1,0 +1,407 @@
+.dashboard-page {
+  width: 100%;
+  margin: 1.5rem auto 2.5rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.dashboard-header {
+  background: linear-gradient(120deg, #0f172a, #1d4ed8);
+  color: #ffffff;
+  border-radius: 14px;
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dashboard-header h1 {
+  font-size: 1.55rem;
+  margin-bottom: 0.3rem;
+}
+
+.dashboard-header p {
+  color: #dbeafe;
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.dashboard-select,
+.dashboard-button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 0.85rem;
+  font-weight: 600;
+}
+
+.dashboard-select {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.dashboard-select.small {
+  font-size: 0.85rem;
+  padding: 0.45rem 0.65rem;
+}
+
+.dashboard-button {
+  background: #f59e0b;
+  color: #111827;
+  cursor: pointer;
+}
+
+.dashboard-button:hover {
+  filter: brightness(1.03);
+}
+
+.dashboard-state {
+  margin: 2rem auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.dashboard-state.error {
+  border: 1px solid #fca5a5;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.kpi-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.kpi-card h3 {
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+.kpi-card p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0.3rem 0;
+}
+
+.kpi-card small {
+  color: #64748b;
+}
+
+.kpi-card.revenue {
+  border-left: 6px solid #22c55e;
+}
+
+.kpi-card.alert {
+  border-left: 6px solid #f97316;
+}
+
+.kpi-card.alert-soft {
+  border-left: 6px solid #fb7185;
+}
+
+.kpi-grid-secondary .kpi-card p {
+  font-size: 1.35rem;
+}
+
+.cashflow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.cashflow-card {
+  background: #0f172a;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.cashflow-card h4 {
+  font-size: 0.9rem;
+  color: #bfdbfe;
+}
+
+.cashflow-card p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.35rem 0;
+}
+
+.cashflow-card span {
+  color: #cbd5e1;
+  font-size: 0.88rem;
+}
+
+.panel {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.panel-head h2 {
+  font-size: 1.06rem;
+  color: #0f172a;
+}
+
+.panel-head span {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.chart-panel {
+  padding-bottom: 0.4rem;
+}
+
+.line-chart-wrapper {
+  width: 100%;
+}
+
+.line-chart {
+  width: 100%;
+  height: 230px;
+  background: linear-gradient(180deg, #e0f2fe 0%, #ffffff 100%);
+  border-radius: 10px;
+  border: 1px solid #bae6fd;
+}
+
+.line-labels {
+  margin-top: 0.7rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
+  gap: 0.45rem;
+  max-height: 130px;
+  overflow: auto;
+}
+
+.line-label-item {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 0.4rem;
+  border: 1px solid #e2e8f0;
+}
+
+.line-label-item span {
+  color: #64748b;
+  display: block;
+  font-size: 0.78rem;
+}
+
+.line-label-item strong {
+  color: #0f172a;
+  font-size: 0.8rem;
+}
+
+.dashboard-two-columns {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 0.9rem;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.comparison-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.7rem;
+  background: #f8fafc;
+}
+
+.comparison-card h4 {
+  color: #475569;
+  font-size: 0.86rem;
+}
+
+.comparison-card p {
+  color: #0f172a;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0.35rem 0;
+}
+
+.comparison-card small {
+  color: #64748b;
+  display: block;
+}
+
+.comparison-card strong {
+  display: inline-block;
+  margin-top: 0.45rem;
+  font-size: 0.9rem;
+}
+
+.comparison-card strong.positive {
+  color: #16a34a;
+}
+
+.comparison-card strong.negative {
+  color: #dc2626;
+}
+
+.weekday-list {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.weekday-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.6rem;
+  background: #f8fafc;
+}
+
+.weekday-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.weekday-head strong {
+  color: #0f172a;
+}
+
+.weekday-head span,
+.weekday-item small {
+  color: #64748b;
+  font-size: 0.82rem;
+}
+
+.weekday-fill {
+  background: linear-gradient(90deg, #0ea5e9, #14b8a6);
+}
+
+.top-products-list,
+.status-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.top-product-item,
+.status-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.65rem;
+}
+
+.top-product-head,
+.status-label-row,
+.top-product-metrics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.top-product-head strong,
+.status-label-row strong {
+  color: #0f172a;
+}
+
+.top-product-head span,
+.status-label-row span,
+.top-product-metrics span {
+  color: #475569;
+  font-size: 0.82rem;
+}
+
+.bar-track {
+  width: 100%;
+  height: 9px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  overflow: hidden;
+  margin: 0.45rem 0;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #3b82f6, #22c55e);
+}
+
+.status-fill {
+  background: linear-gradient(90deg, #f59e0b, #ef4444);
+}
+
+.table-wrap {
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.55rem;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+}
+
+th {
+  color: #334155;
+  background: #f8fafc;
+}
+
+td {
+  color: #0f172a;
+}
+
+@media (max-width: 1100px) {
+  .kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-two-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cashflow-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kpi-grid {
+    grid-template-columns: 1fr;
+  }
+}
